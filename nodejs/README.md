@@ -7,14 +7,16 @@ For accessing our S3 storage using Node.js we can use `minio` package provided b
 ### Initialize the working directory
 
 For Initializing the working directory we can use `npm`:  
-```
+
+```BASH
 npm -y init
 ```
 
 ### install the package
 
 For installing the `minio` package using `npm` run:  
-```
+
+```BASH
 npm install minio
 ```
 
@@ -22,7 +24,7 @@ npm install minio
 
 We can hard-code the credentials and run the code but it is not a best-practice, sample:  
 
-```
+```JS
 const Minio = require('minio')
 
 const log = console.log.bind( console );
@@ -120,3 +122,8 @@ name / date: xxx 2021-09-11T14:23:21.600Z
 ![node.js.png](./node.js.png)
 
 If you had any questions or issues you can ticket us :)
+
+
+### Reference
+
+[javascript-client-api-reference.html](javascript-client-api-reference.html)
