@@ -1,4 +1,4 @@
-# Node.js API
+# Node.js guide for s3
 
 For accessing our S3 storage using Node.js we can use `minio` package provided by [minio](http://min.io/).  
 
