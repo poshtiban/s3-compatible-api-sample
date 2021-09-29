@@ -94,7 +94,77 @@ xxx 2021-09-11 14:23:21.600000+00:00
 
 
 ### Install the module
+
+Method (1) using `pip`:  
+
+```bash
+pip install boto
+```
+
+Method (2) [cloning from main repository](https://pypi.org/project/boto/):  
+
+```bash
+git clone git://github.com/boto/boto.git
+cd boto
+sudo python setup.py install
+```
+
+
+
 ### Configure the code
+
+The same way we applied for Minio, can be used here:  
+ - hard-code
+ - command-line variables
+ - ENV variables
+
+
 ### Run the code
+
+Method (1) for hard-coded code:  
+
+```bash
+python s3.boto.python2.py
+```
+
+Method (2) if `os.environ` used:  
+
+```bash
+END_POINT=s3w-shakibamoshiri.s3.ir-west-1.poshtiban.com \
+    ACCESS_KEY=t7XViGJK3LaKMhj9 \
+    SECRET_KEY=q7lfyrT5qMHgsCle2DJzUtajsm5xvJrz \
+    python3 s3.minio.python3.env.py
+```
+
+Method (3) if `export`ing the variables:  
+
+```bash
+python s3.boto.python2.env.py
+```
+
 ### Code output:
+
+```bash
+> python s3.boto.python2.env.py
+(u'api', u'2021-08-08T07:44:18.665Z')
+(u'duplicati', u'2021-07-15T17:59:13.269Z')
+(u'linux', u'2021-07-15T17:59:14.613Z')
+(u'media', u'2021-08-08T07:54:22.697Z')
+(u'msp360', u'2021-08-25T07:01:28.601Z')
+(u'php8', u'2021-08-26T17:16:33.859Z')
+(u'veeam', u'2021-08-23T08:14:18.526Z')
+(u'windows', u'2021-07-15T17:59:18.739Z')
+(u'wordpress', u'2021-07-15T17:59:19.229Z')
+(u'xxx', u'2021-09-11T14:23:21.600Z')
+```
+
 ### Test and Screenshot 
+
+![s3.boto.python2.env.py.png](./s3.boto.python2.env.py.png)
+
+
+### Instruction for boto3
+
+You can refer to its [doc](https://github.com/boto/boto3).
+
+
