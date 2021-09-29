@@ -1,7 +1,8 @@
 import boto
 import boto.s3.connection
-access_key = 'HLVI3EH79FZGHUU5T1SE'
-secret_key = '5DyycegFwCz85L63nUL2mjMQHtTC3mfwZMOLdjAZ'
+
+access_key = 't7XViGJK3LaKMhj9'
+secret_key = 'q7lfyrT5qMHgsCle2DJzUtajsm5xvJrz'
 endpoint   = 's3w-shakibamoshiri.s3.ir-west-1.poshtiban.com'
 
 s3 = boto.connect_s3(
