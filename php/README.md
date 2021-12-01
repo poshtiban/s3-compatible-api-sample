@@ -67,11 +67,23 @@ END_POINT=https://s3w-shakibamoshiri.s3.ir-west-1.poshtiban.com ACCESS_KEY=<YOUR
 Method (3) using `export` command:  
 
 ```bash
-export END_POINT=<YOUR-ENDPOINT>
+export END_POINT=<YOUR-ENDPOINT>    # NOTE add either http:// or htpps:// before the endpoint, with protocol you will get errors
 export ACCESS_KEY=<YOUR-ACCESS-KEY>
 export SECRET_KEY=<YOUR-SECRET-KEY>
 PHP index.env.php
 ```
+
+NOTE  
+Add either `http://` or `https://` before the endpoint's address, otherwise you will get errors.
+
+```bash
+if your protocol is http
+export END_POINT=http://<YOUR-ENDPOINT>
+
+if your protocol is https
+export END_POINT=https://<YOUR-ENDPOINT>
+```
+
 ### Code output:
 
 ```bash
